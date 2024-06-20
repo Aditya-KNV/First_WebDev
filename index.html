@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class = "navdiv">
+            <div class="logo"><a href="#">Personal Portfolio</a> </div>
+                <ul>
+                    <li><a href="#landing">Home</a>
+                    <li><a href="#about">About Me</a>
+                    <li><a href="#projects">My Projects</a>
+                    <li><a href="#contact">Contact Me</a>
+                    <li><a href="#socialmedia">Social Media</a>
+                </ul>
+        </div>
+    </nav>
+    <section id="landing">
+        <br><br><br><br><br>
+        <fieldset>
+            <div class="profilepic"><img src="Images/profilepic.jpg" alt="Aditya KNV" width="300" height="300"></div>
+            <legend>Brief Bio</legend>
+            <p>Hello! My name is Aditya KNV. <br>I am a sophomore at IIIT Bangalore. <br> I am currently doing my Integrated Masters(IMTech) in Computer Science.</p></marquee>
+    </section>
+    <section id="about">
+        <br><br><br><br>
+        <fieldset>
+            <legend>About Me</legend>
+            <p>
+                Hello! I'm a passionate and versatile software developer with a strong foundation in both programming and web development. I have extensive experience in languages such as C, Python, C++, and JavaScript, which allows me to approach problem-solving with a diverse set of tools. My proficiency in data structures and computer architecture equips me with the ability to write efficient and optimized code, ensuring that my solutions are both robust and performant.
+            </p>
+
+            <p>
+                In addition to my programming skills, I have a solid background in web development and UI/UX design. I enjoy creating intuitive and user-friendly websites that not only look great but also provide a seamless user experience. My knowledge in both frontend and backend development allows me to build comprehensive web applications from the ground up. 
+            </p>
+            
+            <p>
+                I'm always eager to learn new technologies and stay updated with industry trends, as I believe that continuous learning is key to staying relevant in the fast-paced world of technology. I am excited to bring my skills and enthusiasm to new challenges and opportunities. 
+            </p>
+        </fieldset>
+    </section>
+    <section id="projects">
+        <br><br><br><br><br>
+        <fieldset>
+            <legend>Projects</legend>
+            <div class="project">
+                <fieldset>
+                    <legend>Project 1</legend>
+                    <figure>
+                        <img src="Images/Project_1.png" alt="Project 1" width="400" height="300">
+                    </figure>
+                    <h2>Combinational Circuit: 4:1 Multiplexer</h2>
+                    <h3>Tools Used:</h3>
+                    <ul>
+                        <li>LTSpice</li>
+                    </ul>
+                    <h3>Concepts Used:</h3>
+                    <ul>
+                        <li>Digital Logic Design</li>
+                    </ul>
+                    <p>
+                        A 4:1 multiplexer is a digital logic circuit that has four input lines, one output line, two select lines, and is used
+                        to select one of the four input lines and route it to the output line <br> based on the values of the control lines.
+                        Inputs (d0, d1, d2, d3): These input lines are the signals you want to choose <br> from and pass to the output.
+                        Output (y): The output line is where the selected input is transmitted. Select lines (s0, s1): These select lines
+                        determine which of the four inputs is given to the output. Functionality: The select lines (s0 and s1) determine
+                        which input line is transmitted <br> to the output. <br> <br>
+                        When s1 = 0 and s0 = 1, d1 is selected. When s1 = 0 and s0 = 1, d1 is selected. When s1 = 1 and s0 = 0,
+                        d2 is selected. When s1 = 1 and s0 = 1, d3 is selected. <br> <br>
+                        Applications: 4:1 multiplexers are used in various applications, such as data routing in digital systems, mem-
+                        ory address decoding, selecting between multiple input sources, and as a basic building block for constructing
+                        more complex circuits.
+                    </p>
+                    <button><a href="Projects/Project_1/Multiplexer.zip">View Project</a></button>&nbsp;
+                    <button><a href="Reports/Digital_design_project_Report(Group 31) (4) (1).pdf">View Detailed Report</a></button>
+                </fieldset>
+            </div>
+            <div class="project">
+                <fieldset>
+                    <legend>Project 2</legend>
+                    <figure>
+                        <img src="Images/Project_2.png" alt="Project 2" width="400" height="300">
+                    </figure>
+                    <h2>IAS Processor Design</h2>
+                    <h3>Tools Used:</h3>
+                    <ul>
+                        <li>C Compiler</li>
+                        <li>C++ Compiler</li>
+                        <li>Python Compiler</li>
+                    </ul>
+                    <h3>Concepts Used:</h3>
+                    <ul>
+                        <li>IAS Architecture</li>
+                        <li>Programming Skills</li>
+                    </ul>
+                    <h3>We have 3 elements in this Project</h3>
+                    <ol>
+                        <li>C and Assembly Programming</li>
+                        <li>Assembler for IAS</li>
+                        <li>Processor for IAS</li>
+                    </ol>
+                    <h3>C and Assembly Programming</h3>
+                    <p>Firstly we write a C code and then we write the Assembly code <br> for that following the IAS Architecture.</p>
+                    <h3>Assembler for IAS</h3>
+                    <p>Then we create a Assembler which is used to convert the Assembly code into Machine code(i.e binary), for each line of assembly there will be a unique machine code generated following the IAS Architecture.</p>
+                    <h3>Processor for IAS</h3>
+                    <p>Finally, we create a processor which will understand the Machine code we accquired from the Assembler and do the required task as that of the C program.</p>
+                    <button><a href="Projects/Project_2.zip">View Project</a></button>&nbsp;
+                    <button><a href="Reports/IMT2023033, IMT2023054, IMT2023608_Report_Updated (3).pdf" download>View Detailed Report</a></button>
+                </fieldset>
+            </div>
+            <div class="project">
+                <fieldset>
+                    <legend>Project 3</legend>
+                    <figure>
+                        <img src="Images/Project_3.png" alt="Project 3" width="400" height="300">
+                    </figure>
+                    <h2>MIPS Non-Pipelined Processor Design</h2>
+                    <h3>Tools Used:</h3>
+                    <ul>
+                        <li>MARS Simulator</li>
+                        <li>Python Compiler</li>
+                        <li>C Compiler</li>
+                    </ul>
+                    <h3>Concepts Used:</h3>
+                    <ul>
+                        <li>MIPS Architecture</li>
+                        <li>Programming Skills</li>
+                    </ul>
+                    <h3>We have 2 elements in this Project.</h3>
+                    <ol>
+                        <li>Running Assembly programs using MARS Simulator</li>
+                        <li>MIPS Non-pipelined Processor</li>
+                    </ol>
+                    <h3>Running Assembly programs using MARS Simulator</h3>
+                    <p>After we write the C code for a program we then write it in MIPS Assembly.</p> 
+                    <p>Then we'll run it on a MARS Simulator.</p>
+                    <h3>MIPS Non-pipelined Processor</h3>
+                    <p>After running the Assembly code we get a hexadecimal code.</p>
+                    <p>We'll run that code on our Processor and get the required output.</p>
+                    <button type="button"><a href="Projects/Project_3/Project_3/">View Project</a></button> &nbsp;
+                    <button><a href="Reports/imt2023033,imt2023054,imt2023608_report (3).pdf" download>View Detailed Report</a></button>
+                </fieldset>
+            </div>
+        </fieldset>
+    </section>
+    <section id="contact">
+        <br><br><br><br><br>
+        <fieldset>
+            <legend>Contact Me</legend>
+            <form id="contact-form">
+                <ul>
+                    <li><label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required></li>
+                    <li><label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required></li> <br>
+                    <li><label for="message">Message:</label></li> <br>
+                    <textarea id="message" name="message" cols="30" rows="10" ></textarea><br>
+                    <br>
+                    <li><button type="submit">Submit</button></li><br>
+                </ul>
+            </form>
+        </fieldset>
+    </section>
+    <section id="socialmedia">
+        <br><br><br><br>
+        <fieldset>
+            <legend>Social Media</legend>
+            <p><h3>LinkedIn Handle:</h3> <a href="https://www.linkedin.com/in/kothamasu-naga-venkata-aditya-03b932311" target="_blank">Click Here</a></p>
+        </fieldset>
+    </section>
+    <footer>
+        <br><br>
+        <p>&copy; 2024 Aditya KNV</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
