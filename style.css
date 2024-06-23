@@ -165,4 +165,15 @@ footer p {
     }
 }
 
+@media (max-width: 600px) {
+    #landing p {
+        font-size: 32px;
+        padding: 5px;
+    }
+
+    legend {
+        font-size: 32px;
+    }
+}
+
 
