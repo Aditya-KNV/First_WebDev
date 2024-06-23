@@ -9,21 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class = "navdiv">
+        <div class="navdiv">
             <div class="logo"><a href="#">Personal Portfolio</a> </div>
-                <ul>
-                    <li><a href="#landing">Home</a>
-                    <li><a href="#about">About Me</a>
-                    <li><a href="#projects">My Projects</a>
-                    <li><a href="#contact">Contact Me</a>
-                    <li><a href="#socialmedia">Social Media</a>
-                </ul>
+            <button class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#socialmedia">Social Media</a></li>
+            </ul>
         </div>
     </nav>
     <section id="landing">
         <br><br><br><br><br>
         <fieldset>
-            <div class="profilepic"><img src="Images/profilepic.jpg" alt="Aditya KNV" width="300" height="300"></div>
+            <div class="profilepic"><img  id="Image"  src="Images/profilepic.jpg" alt="Aditya KNV" width="300" height="300"></div>
             <legend>Brief Bio</legend>
             <p>Hello! My name is Aditya KNV. <br>I am a sophomore at IIIT Bangalore. <br> I am currently doing my Integrated Masters(IMTech) in Computer Science.</p></marquee>
     </section>
@@ -180,5 +185,11 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
