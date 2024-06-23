@@ -75,7 +75,7 @@ a.active, a:hover {
 }
 
 #landing {
-    background: url('bg1.jpg') no-repeat center center;
+    background: url('Images/Logo.png') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 80px);
     padding: 100px 30px 30px 30px;
