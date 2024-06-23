@@ -1,13 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
+    background-color: rgb(0, 28, 28);
+    color: whitesmoke;
+    padding: 10;
+    margin: 20;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(0, 28, 28);
-    color: whitesmoke;
 }
 
 nav {
@@ -17,27 +19,24 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
 }
 
 label.logo {
     color: white;
     font-size: 35px;
-    font-weight: bold;
     line-height: 80px;
     padding: 0 25px;
+    font-weight: bold;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
+    float: right;
+    margin-right: 20px;
 }
 
 nav ul li {
-    list-style: none;
+    display: inline-block;
+    line-height: 80px;
     margin: 0 5px;
 }
 
@@ -47,21 +46,32 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+a.active, a:hover {
     background: rgb(0, 28, 28);
     transition: 0.5s;
 }
 
 .checkbtn {
-    display: none;
     font-size: 30px;
     color: white;
+    float: right;
     line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.profilepic img {
+    float: right;
+    padding: 20px;
+    border-radius: 50%;
+    border: 4px solid teal;
 }
 
 #landing {
@@ -88,18 +98,18 @@ nav ul li a:hover {
 }
 
 #about p {
-    font-size: 28px;
-}
-
-fieldset {
-    padding: 20px;
-    border: 1px solid teal;
+    font-size: 26px;
 }
 
 legend {
     font-size: 44px;
     font-weight: bold;
     color: rgb(2, 166, 166);
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid teal;
 }
 
 .project {
@@ -109,6 +119,18 @@ legend {
 .project img {
     float: right;
     border: 2px solid teal;
+}
+
+.project ul li{
+    font-size: 22px;
+}
+
+.project ol li{
+    font-size: 22px;
+}
+
+.project p{
+    font-size: 22px;
 }
 
 #contact ul li {
@@ -129,8 +151,23 @@ input, textarea {
     border: 2px solid teal;
 }
 
-h2, h3 {
+h2 {
     text-decoration: underline;
+    font-size: 28px;
+    color: rgb(2, 166, 166);
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 22px;
+    color: rgb(2, 166, 166);
+}
+
+#socialmedia a{
+    font-size: 22px;
+}
+
+footer p {
     color: rgb(2, 166, 166);
 }
 
@@ -144,29 +181,44 @@ h2, h3 {
     }
 }
 
-@media (max-width: 600px) {
-    label.logo {
-        font-size: 24px;
-    }
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        width: 100%;
-        background-color: rgb(0, 28, 28);
-        top: 80px;
-        left: 0;
-        text-align: center;
-        z-index: 100;
-    }
-    nav ul.active {
-        display: flex;
-    }
-    nav ul li {
-        margin: 20px 0;
-    }
+@media (max-width: 858px) {
     .checkbtn {
         display: block;
-        margin-right: 20px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 28, 28);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #landing p {
+        font-size: 32px;
+        padding: 5px;
+    }
+
+    legend {
+        font-size: 32px;
     }
 }
